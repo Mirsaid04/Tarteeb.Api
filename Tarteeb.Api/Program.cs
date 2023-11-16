@@ -1,3 +1,8 @@
+//==========================================================
+// Copyright (c) Coalition of Good-Hearted Engineers
+// Free to use to order in your workplace
+//==========================================================
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +20,6 @@ namespace Tarteeb.Api
         {
             CreateHostBuilder(args).Build().Run();
         }
-
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
