@@ -12,7 +12,6 @@ namespace Tarteeb.Api.Brokers.Storages
     public partial class StorageBroker : EFxceptionsContext
     {
         private readonly IConfiguration configuration;
-
         public StorageBroker(IConfiguration configuration)
         {
             this.configuration = configuration;
