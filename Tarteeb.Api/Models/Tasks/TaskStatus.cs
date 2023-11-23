@@ -11,6 +11,5 @@ namespace Tarteeb.Api.Models.Tasks
         TODO,
         INPROGRESS,
         DONE
-
     }
 }
