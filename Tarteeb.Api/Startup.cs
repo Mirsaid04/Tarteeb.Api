@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Tarteeb.Api.Brokers.Storages;
 
 namespace Tarteeb.Api
 {
@@ -21,11 +22,10 @@ namespace Tarteeb.Api
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
+            services.AddDbContext<StorageBroker>();
 
             services.AddSwaggerGen(config =>
             {
